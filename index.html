@@ -25,29 +25,29 @@
                     <tr>
                         <!-- create button and assign value to each button -->
                         <!-- dis("1") will call function dis to display value -->
-                        <td><input type="button" value="1" onclick="display('1')" /> </td>
-                        <td><input type="button" value="2" onclick="display('2')" /> </td>
-                        <td><input type="button" value="3" onclick="display('3')" /> </td>
-                        <td><input type="button" value="/" onclick="divide()" /> </td>
+                        <td><input type="button" value="1" onclick="addDisplay('1')" /> </td>
+                        <td><input type="button" value="2" onclick="addDisplay('2')" /> </td>
+                        <td><input type="button" value="3" onclick="addDisplay('3')" /> </td>
+                        <td><input type="button" value="/" onclick="operation('/')" /> </td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="4" onclick="display('4')" /> </td>
-                        <td><input type="button" value="5" onclick="display('5')" /> </td>
-                        <td><input type="button" value="6" onclick="display('6')" /> </td>
-                        <td><input type="button" value="-" onclick="subtract()" /> </td>
+                        <td><input type="button" value="4" onclick="addDisplay('4')" /> </td>
+                        <td><input type="button" value="5" onclick="addDisplay('5')" /> </td>
+                        <td><input type="button" value="6" onclick="addDisplay('6')" /> </td>
+                        <td><input type="button" value="-" onclick="operation('-')" /> </td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="7" onclick="display('7')" /> </td>
-                        <td><input type="button" value="8" onclick="display('8')" /> </td>
-                        <td><input type="button" value="9" onclick="display('9')" /> </td>
-                        <td><input type="button" value="+" onclick="add()" /> </td>
+                        <td><input type="button" value="7" onclick="addDisplay('7')" /> </td>
+                        <td><input type="button" value="8" onclick="addDisplay('8')" /> </td>
+                        <td><input type="button" value="9" onclick="addDisplay('9')" /> </td>
+                        <td><input type="button" value="+" onclick="operation('+')" /> </td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="." onclick="display('.')" /> </td>
-                        <td><input type="button" value="0" onclick="display('0')" /> </td>
+                        <td><input type="button" value="." onclick="addDisplay('.')" /> </td>
+                        <td><input type="button" value="0" onclick="addDisplay('0')" /> </td>
                         <!-- solve function call function solve to evaluate value -->
                         <td><input type="button" value="=" onclick="solve()" /> </td>
-                        <td><input type="button" value="*" onclick="multiply()" /> </td>
+                        <td><input type="button" value="*" onclick="operation('*')" /> </td>
                     </tr>
                 </table>
             </div>
