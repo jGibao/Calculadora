@@ -9,16 +9,17 @@ let counter;
 let count = 0;
 
 function updateDisplay(val) {
-    if (val > 9999999999999) {
+    if (val == "Infinity") {
+        document.getElementById("result").value = "Error";
+    } else if (val > 9999999999999) {
         document.getElementById("result").value = "OUT OF RANGE";
     } else {
         document.getElementById("result").value = val;
     }
-
 }
 
 function backSpace() {
-    if (document.getElementById("result").value == "NaN") {
+    if (document.getElementById("result").value == "NaN" || document.getElementById("result").value == "OUT OF RANGE" || document.getElementById("result").value == "Error") {
         updateDisplay("");
     } else {
         updateDisplay(document.getElementById("result").value.slice(0, -1));
@@ -42,10 +43,8 @@ function addDisplay(val) {
 }
 
 function start() {
-    console.log("start");
     counter = setInterval(function() {
         count++;
-        console.log(count);
         if (count >= 1) {
             document.getElementById("backspaceC").style.backgroundColor = "rgb(122, 119, 114)";
         }
@@ -96,7 +95,6 @@ function solve() {
             updateDisplay(parseFloat(nums[0]) / parseFloat(nums[1]));
             break;
     }
-    console.log(mathToSolve);
     operator = null;
     cleanNextInput = true;
 }
@@ -108,6 +106,5 @@ function operation(op) {
     cleanNextInput = true;
     num1 = document.getElementById("result").value;
     mathToSolve = num1 + ",";
-    console.log(mathToSolve);
     operator = op;
 }
