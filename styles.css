@@ -6,6 +6,15 @@
     width: 100vw;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
 .title {
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
@@ -34,15 +43,6 @@
     border-left-color: rgb(255, 252, 248);
     border-left-width: 5px;
     box-shadow: 0 0 5px black;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 250px;
-    margin-bottom: 250px;
 }
 
 input {

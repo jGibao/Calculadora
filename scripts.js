@@ -9,11 +9,20 @@ let counter;
 let count = 0;
 
 function updateDisplay(val) {
-    document.getElementById("result").value = val;
+    if (val > 9999999999999) {
+        document.getElementById("result").value = "OUT OF RANGE";
+    } else {
+        document.getElementById("result").value = val;
+    }
+
 }
 
 function backSpace() {
-    updateDisplay(document.getElementById("result").value.slice(0, -1));
+    if (document.getElementById("result").value == "NaN") {
+        updateDisplay("");
+    } else {
+        updateDisplay(document.getElementById("result").value.slice(0, -1));
+    }
 }
 
 function addDisplay(val) {
@@ -38,7 +47,6 @@ function start() {
         count++;
         console.log(count);
         if (count >= 1) {
-            console.log("faz clean");
             document.getElementById("backspaceC").style.backgroundColor = "rgb(122, 119, 114)";
         }
     }, 1000);
@@ -47,7 +55,6 @@ function start() {
 function end() {
     if (count < 1) {
         backSpace();
-        console.log("backspace");
     } else {
         clean();
     }
@@ -74,7 +81,6 @@ function solve() {
     }
     num2 = document.getElementById("result").value;
     mathToSolve += num2;
-    console.log(mathToSolve);
     let nums = mathToSolve.split(",");
     switch (operator) {
         case "+":
@@ -90,6 +96,7 @@ function solve() {
             updateDisplay(parseFloat(nums[0]) / parseFloat(nums[1]));
             break;
     }
+    console.log(mathToSolve);
     operator = null;
     cleanNextInput = true;
 }
@@ -101,6 +108,6 @@ function operation(op) {
     cleanNextInput = true;
     num1 = document.getElementById("result").value;
     mathToSolve = num1 + ",";
+    console.log(mathToSolve);
     operator = op;
-
 }
