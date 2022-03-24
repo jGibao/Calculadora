@@ -54,6 +54,11 @@ input {
     box-shadow: 0 0 2px rgb(141, 137, 131), inset 0.2em 0.2em 0 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0 0 rgba(165, 157, 157, 0.5);
 }
 
+#backspaceC {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 #result {
     width: 190px;
     text-align: right;

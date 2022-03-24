@@ -20,14 +20,14 @@
                     <tr>
                         <td colspan="3"><input type="text" id="result" placeholder="0" /></td>
                         <!-- clr() function will call clr to clear all value -->
-                        <td><input type="button" value="c" onclick="clean()" /> </td>
+                        <td><input type="button" id="backspaceC" value="b/c" onmousedown="start()" onmouseup="end()" /> </td>
                     </tr>
                     <tr>
                         <!-- create button and assign value to each button -->
                         <!-- dis("1") will call function dis to display value -->
-                        <td><input type="button" value="1" onclick="addDisplay('1')" /> </td>
-                        <td><input type="button" value="2" onclick="addDisplay('2')" /> </td>
-                        <td><input type="button" value="3" onclick="addDisplay('3')" /> </td>
+                        <td><input type="button" value="7" onclick="addDisplay('7')" /> </td>
+                        <td><input type="button" value="8" onclick="addDisplay('8')" /> </td>
+                        <td><input type="button" value="9" onclick="addDisplay('9')" /> </td>
                         <td><input type="button" value="/" onclick="operation('/')" /> </td>
                     </tr>
                     <tr>
@@ -37,9 +37,9 @@
                         <td><input type="button" value="-" onclick="operation('-')" /> </td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="7" onclick="addDisplay('7')" /> </td>
-                        <td><input type="button" value="8" onclick="addDisplay('8')" /> </td>
-                        <td><input type="button" value="9" onclick="addDisplay('9')" /> </td>
+                        <td><input type="button" value="1" onclick="addDisplay('1')" /> </td>
+                        <td><input type="button" value="2" onclick="addDisplay('2')" /> </td>
+                        <td><input type="button" value="3" onclick="addDisplay('3')" /> </td>
                         <td><input type="button" value="+" onclick="operation('+')" /> </td>
                     </tr>
                     <tr>

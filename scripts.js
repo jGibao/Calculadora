@@ -4,9 +4,16 @@ let memmoryFull = false;
 let mathToSolve = null;
 let cleanNextInput = false;
 let operator = null;
+let cButton = document.getElementById('counter');
+let counter;
+let count = 0;
 
 function updateDisplay(val) {
     document.getElementById("result").value = val;
+}
+
+function backSpace() {
+    updateDisplay(document.getElementById("result").value.slice(0, -1));
 }
 
 function addDisplay(val) {
@@ -23,6 +30,30 @@ function addDisplay(val) {
     } else if (document.getElementById("result").value.length <= 12) {
         document.getElementById("result").value += val;
     }
+}
+
+function start() {
+    console.log("start");
+    counter = setInterval(function() {
+        count++;
+        console.log(count);
+        if (count >= 1) {
+            console.log("faz clean");
+            document.getElementById("backspaceC").style.backgroundColor = "rgb(122, 119, 114)";
+        }
+    }, 1000);
+}
+
+function end() {
+    if (count < 1) {
+        backSpace();
+        console.log("backspace");
+    } else {
+        clean();
+    }
+    clearInterval(counter);
+    count = 0;
+    document.getElementById("backspaceC").style.backgroundColor = null;
 }
 
 function clean() {
