@@ -28,6 +28,8 @@
 }
 
 .calcBody {
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
     background-color: rgb(255, 247, 238);
     border-right-style: solid;
@@ -80,6 +82,67 @@ input {
     justify-content: center;
 }
 
-p {
+a {
     font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.programado {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 247, 238);
+    background-color: rgb(255, 247, 238);
+    border-right-style: solid;
+    border-right-color: rgb(214, 207, 198);
+    border-right-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(214, 207, 198);
+    border-bottom-width: 5px;
+    border-top-style: solid;
+    border-top-color: rgb(255, 252, 248);
+    border-top-width: 5px;
+    border-left-style: solid;
+    border-left-color: rgb(255, 252, 248);
+    border-left-width: 5px;
+    box-shadow: 0 0 5px black;
+}
+
+.inst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 247, 238);
+    background-color: rgb(255, 247, 238);
+    border-right-style: solid;
+    border-right-color: rgb(214, 207, 198);
+    border-right-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(214, 207, 198);
+    border-bottom-width: 5px;
+    border-top-style: solid;
+    border-top-color: rgb(255, 252, 248);
+    border-top-width: 5px;
+    border-left-style: solid;
+    border-left-color: rgb(255, 252, 248);
+    border-left-width: 5px;
+    box-shadow: 0 0 5px black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    margin: 5px;
+    width: 100%;
 }
