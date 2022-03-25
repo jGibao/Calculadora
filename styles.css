@@ -1,9 +1,20 @@
+body {
+    background: rgb(255, 247, 238);
+    background: radial-gradient(circle, rgba(255, 247, 238, 1) 14%, rgba(92, 92, 92, 1) 100%);
+    cursor: url(http://www.rw-designer.com/cursor-view/1285.png), auto;
+}
+
 #wrapper {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
     width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -11,8 +22,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 .title {
@@ -31,7 +40,7 @@
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
-    background-color: rgb(255, 247, 238);
+    background-color: #fff7ee;
     border-right-style: solid;
     border-right-color: rgb(214, 207, 198);
     border-right-width: 5px;
@@ -44,7 +53,7 @@
     border-left-style: solid;
     border-left-color: rgb(255, 252, 248);
     border-left-width: 5px;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 10px black;
 }
 
 input {
@@ -54,6 +63,11 @@ input {
     width: 50px;
     margin: 10px;
     box-shadow: 0 0 2px rgb(141, 137, 131), inset 0.2em 0.2em 0 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0 0 rgba(165, 157, 157, 0.5);
+    cursor: url(http://www.rw-designer.com/cursor-view/1285.png), auto;
+}
+
+#backspaceC {
+    background-color: rgb(207, 117, 117);
 }
 
 #backspaceC {
@@ -64,55 +78,25 @@ input {
 #result {
     width: 190px;
     text-align: right;
-    background-color: rgb(170, 255, 184);
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    position: fixed;
-    height: 40px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(255, 247, 238);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(168, 255, 183);
 }
 
 a {
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 10px;
-    margin-right: 10px;
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 .programado {
+    margin-top: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-weight: bolder;
     justify-content: space-between;
-    padding: 10px;
-    margin: 20px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(255, 247, 238);
-    background-color: rgb(255, 247, 238);
-    border-right-style: solid;
-    border-right-color: rgb(214, 207, 198);
-    border-right-width: 5px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(214, 207, 198);
-    border-bottom-width: 5px;
-    border-top-style: solid;
-    border-top-color: rgb(255, 252, 248);
-    border-top-width: 5px;
-    border-left-style: solid;
-    border-left-color: rgb(255, 252, 248);
-    border-left-width: 5px;
-    box-shadow: 0 0 5px black;
+    font-size: 20px;
 }
 
 .inst {
@@ -120,9 +104,8 @@ a {
     flex-direction: column;
     align-items: center;
     font-weight: bolder;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
     background-color: rgb(255, 247, 238);
     background-color: rgb(255, 247, 238);
     border-right-style: solid;
@@ -143,6 +126,14 @@ a {
 }
 
 p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
     margin: 5px;
-    width: 100%;
+    max-width: fit-content;
+    font-weight: bolder;
+}
+
+img {
+    margin: 10px;
+    margin-bottom: 0px;
 }
