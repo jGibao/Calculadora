@@ -1,7 +1,6 @@
 body {
     background: rgb(255, 247, 238);
     background: radial-gradient(circle, rgba(255, 247, 238, 1) 14%, rgba(92, 92, 92, 1) 100%);
-    cursor: url(http://www.rw-designer.com/cursor-view/1285.png), auto;
 }
 
 #wrapper {
@@ -63,7 +62,6 @@ input {
     width: 50px;
     margin: 10px;
     box-shadow: 0 0 2px rgb(141, 137, 131), inset 0.2em 0.2em 0 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0 0 rgba(165, 157, 157, 0.5);
-    cursor: url(http://www.rw-designer.com/cursor-view/1285.png), auto;
 }
 
 #backspaceC {
